@@ -1,0 +1,48 @@
+2019-12-14 22:28:02.036|WARN ||o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext|Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userControler': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zxp.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-12-14 22:28:02.221|ERROR||o.s.b.d.LoggingFailureAnalysisReporter|
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in com.zxp.dao.UserDao required a bean of type 'com.zxp.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zxp.mapper.UserMapper' in your configuration.
+
+2019-12-14 22:29:26.770|WARN ||o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext|Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userControler': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zxp.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-12-14 22:29:26.934|ERROR||o.s.b.d.LoggingFailureAnalysisReporter|
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in com.zxp.dao.UserDao required a bean of type 'com.zxp.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zxp.mapper.UserMapper' in your configuration.
+
+2019-12-14 22:31:44.846|WARN ||o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext|Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userControler': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zxp.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-12-14 22:31:44.996|ERROR||o.s.b.d.LoggingFailureAnalysisReporter|
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in com.zxp.dao.UserDao required a bean of type 'com.zxp.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zxp.mapper.UserMapper' in your configuration.
+

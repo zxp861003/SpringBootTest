@@ -1,0 +1,105 @@
+2019-12-14 22:27:58.487|INFO ||c.z.SpringMainServer|Starting SpringMainServer on 276L1TOFFTS9ZKY with PID 6816 (E:\springcloudworkspace\SpringBootTest\target\classes started by Administrator in E:\springcloudworkspace\SpringBootTest)
+2019-12-14 22:27:58.507|INFO ||c.z.SpringMainServer|No active profile set, falling back to default profiles: default
+2019-12-14 22:27:58.607|INFO ||o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext|Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@710c2b53: startup date [Sat Dec 14 22:27:58 CST 2019]; root of context hierarchy
+2019-12-14 22:27:59.241|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 5.3.6.Final
+2019-12-14 22:28:01.333|INFO ||o.s.b.c.e.t.TomcatEmbeddedServletContainer|Tomcat initialized with port(s): 8080 (http)
+2019-12-14 22:28:01.357|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+2019-12-14 22:28:01.359|INFO ||o.a.c.c.StandardEngine|Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-12-14 22:28:01.582|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+2019-12-14 22:28:01.582|INFO ||o.s.w.c.ContextLoader|Root WebApplicationContext: initialization completed in 2975 ms
+2019-12-14 22:28:01.926|INFO ||o.s.b.w.s.ServletRegistrationBean|Mapping servlet: 'dispatcherServlet' to [/]
+2019-12-14 22:28:01.934|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-14 22:28:01.934|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-14 22:28:01.934|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-14 22:28:01.935|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-14 22:28:01.935|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'TestFilter' to urls: [/*]
+2019-12-14 22:28:02.036|WARN ||o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext|Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userControler': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zxp.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-12-14 22:28:02.048|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+2019-12-14 22:28:02.074|INFO ||o.s.b.a.l.AutoConfigurationReportLoggingInitializer|
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-12-14 22:28:02.221|ERROR||o.s.b.d.LoggingFailureAnalysisReporter|
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in com.zxp.dao.UserDao required a bean of type 'com.zxp.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zxp.mapper.UserMapper' in your configuration.
+
+2019-12-14 22:29:23.262|INFO ||c.z.SpringMainServer|Starting SpringMainServer on 276L1TOFFTS9ZKY with PID 4864 (E:\springcloudworkspace\SpringBootTest\target\classes started by Administrator in E:\springcloudworkspace\SpringBootTest)
+2019-12-14 22:29:23.268|INFO ||c.z.SpringMainServer|No active profile set, falling back to default profiles: default
+2019-12-14 22:29:23.371|INFO ||o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext|Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@710c2b53: startup date [Sat Dec 14 22:29:23 CST 2019]; root of context hierarchy
+2019-12-14 22:29:24.463|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 5.3.6.Final
+2019-12-14 22:29:26.005|INFO ||o.s.b.c.e.t.TomcatEmbeddedServletContainer|Tomcat initialized with port(s): 8080 (http)
+2019-12-14 22:29:26.024|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+2019-12-14 22:29:26.026|INFO ||o.a.c.c.StandardEngine|Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-12-14 22:29:26.256|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+2019-12-14 22:29:26.257|INFO ||o.s.w.c.ContextLoader|Root WebApplicationContext: initialization completed in 2886 ms
+2019-12-14 22:29:26.648|INFO ||o.s.b.w.s.ServletRegistrationBean|Mapping servlet: 'dispatcherServlet' to [/]
+2019-12-14 22:29:26.656|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-14 22:29:26.657|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-14 22:29:26.657|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-14 22:29:26.657|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-14 22:29:26.657|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'TestFilter' to urls: [/*]
+2019-12-14 22:29:26.770|WARN ||o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext|Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userControler': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zxp.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-12-14 22:29:26.773|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+2019-12-14 22:29:26.794|INFO ||o.s.b.a.l.AutoConfigurationReportLoggingInitializer|
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-12-14 22:29:26.934|ERROR||o.s.b.d.LoggingFailureAnalysisReporter|
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in com.zxp.dao.UserDao required a bean of type 'com.zxp.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zxp.mapper.UserMapper' in your configuration.
+
+2019-12-14 22:31:42.248|INFO ||c.z.SpringMainServer|Starting SpringMainServer on 276L1TOFFTS9ZKY with PID 7496 (E:\springcloudworkspace\SpringBootTest\target\classes started by Administrator in E:\springcloudworkspace\SpringBootTest)
+2019-12-14 22:31:42.252|INFO ||c.z.SpringMainServer|No active profile set, falling back to default profiles: default
+2019-12-14 22:31:42.334|INFO ||o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext|Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55ca8de8: startup date [Sat Dec 14 22:31:42 CST 2019]; root of context hierarchy
+2019-12-14 22:31:42.775|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 5.3.6.Final
+2019-12-14 22:31:44.294|INFO ||o.s.b.c.e.t.TomcatEmbeddedServletContainer|Tomcat initialized with port(s): 8080 (http)
+2019-12-14 22:31:44.310|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+2019-12-14 22:31:44.312|INFO ||o.a.c.c.StandardEngine|Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-12-14 22:31:44.477|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+2019-12-14 22:31:44.477|INFO ||o.s.w.c.ContextLoader|Root WebApplicationContext: initialization completed in 2143 ms
+2019-12-14 22:31:44.746|INFO ||o.s.b.w.s.ServletRegistrationBean|Mapping servlet: 'dispatcherServlet' to [/]
+2019-12-14 22:31:44.753|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-14 22:31:44.754|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-14 22:31:44.754|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-14 22:31:44.754|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-14 22:31:44.754|INFO ||o.s.b.w.s.FilterRegistrationBean|Mapping filter: 'TestFilter' to urls: [/*]
+2019-12-14 22:31:44.846|WARN ||o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext|Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userControler': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zxp.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-12-14 22:31:44.850|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+2019-12-14 22:31:44.871|INFO ||o.s.b.a.l.AutoConfigurationReportLoggingInitializer|
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-12-14 22:31:44.996|ERROR||o.s.b.d.LoggingFailureAnalysisReporter|
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in com.zxp.dao.UserDao required a bean of type 'com.zxp.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zxp.mapper.UserMapper' in your configuration.
+

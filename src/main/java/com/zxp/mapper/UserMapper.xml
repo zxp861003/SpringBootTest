@@ -32,7 +32,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		t_user(name,age) values(#{name},#{age})
 	</insert>
 
-	<select id="selectUserList" resultMap="userList">
+	<select id="selectUserList" parameterType="queryUserParam" resultMap="userList">
 		select
 		<include refid="Base_Column_List" />
 		from t_user
@@ -48,6 +48,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		</if>
 	</select>
 
+	<update id="updateUser" parameterType="user" >
+		update t_user set name = #{name},dep_id=#{depId}
+		where id = #{id}
+	</update>
 
 	<!-- <select id="selectUsersById" resultType="users"> select id,name,age 
 		from users where id = #{value} </select> <update id="updateUser" parameterType="users"> 

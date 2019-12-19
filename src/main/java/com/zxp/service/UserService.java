@@ -22,4 +22,8 @@ public class UserService {
 		return userMapper.selectUserList();
 	}
 
+	public User updateUser() {
+		return null;
+	}
+
 }

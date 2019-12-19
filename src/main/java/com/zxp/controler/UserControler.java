@@ -6,15 +6,17 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.zxp.controler.output.BaseResponse;
 import com.zxp.po.User;
 import com.zxp.service.UserService;
 
 @RestController    //@RestController = @ResponseBody + @Controller 
 @RequestMapping("/user")
-public class UserControler {
+public class UserControler extends BaseControler{
 
 	private static final Logger logger = Logger.getLogger(UserControler.class);
 	
@@ -22,14 +24,22 @@ public class UserControler {
 	private UserService userService;
 	
 	@GetMapping("/getall")
-	public List<User> getUserList(){
-		logger.debug("controls  enter getUserList ");
+	public BaseResponse getUserList(){
 		logger.info("controls  start getUserList ");
-		return userService.selectUsersAll();
+		List<User> list = userService.selectUsersAll();
+		
+		return getSuccessResponse(list);
 	}
+	
 	@PostMapping("/adduser")
 	public List<User> addUser(){
 		
 		return userService.selectUsersAll();
+	}
+	
+	@PutMapping("/updateuser" )
+	public User updateUser(){
+		
+		return userService.updateUser();
 	}
 }

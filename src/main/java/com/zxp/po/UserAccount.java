@@ -2,16 +2,17 @@ package com.zxp.po;
 
 public class UserAccount {
 
-	private long userId;
+	private long id;
 	private String nickName;
 	private String account;
 	private transient String password;
 	
-	public long getUserId() {
-		return userId;
+	
+	public long getId() {
+		return id;
 	}
-	public void setUserId(long userId) {
-		this.userId = userId;
+	public void setId(long id) {
+		this.id = id;
 	}
 	public String getPassword() {
 		return password;

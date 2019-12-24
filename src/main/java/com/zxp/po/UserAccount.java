@@ -1,19 +1,14 @@
 package com.zxp.po;
 
-public class UserAccount {
+public class UserAccount extends BasePo{
 
-	private long id;
+	private static final long serialVersionUID = -4808301425177444743L;
+	private long userId;
 	private String nickName;
 	private String account;
 	private transient String password;
 	
 	
-	public long getId() {
-		return id;
-	}
-	public void setId(long id) {
-		this.id = id;
-	}
 	public String getPassword() {
 		return password;
 	}
@@ -31,6 +26,12 @@ public class UserAccount {
 	}
 	public void setAccount(String account) {
 		this.account = account;
+	}
+	public long getUserId() {
+		return userId;
+	}
+	public void setUserId(long userId) {
+		this.userId = userId;
 	}
 	
 	

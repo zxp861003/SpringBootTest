@@ -2,6 +2,9 @@ package com.zxp.po;
 
 import java.util.List;
 
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotBlank;
+
 /**
  * 在SQL  XML 中可以使用别称  别称是首字母小写的类名  user
  * 
@@ -10,6 +13,8 @@ public class User extends BasePo {
 
 	private static final long serialVersionUID = 5914805358222217754L;
 
+	@NotBlank(message = "姓名不能为空")
+	@Length(min = 2, max = 10, message = "姓名必须在2到6位之间")
 	private String name;
 	private byte sex;
 	private int age;

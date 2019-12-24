@@ -22,6 +22,11 @@ public class UserService {
 		return userMapper.selectUserList();
 	}
 
+	public int addUser(User user) {
+		int result = userMapper.insertUser(user);
+		return result;
+	}
+	
 	public User updateUser() {
 		return null;
 	}

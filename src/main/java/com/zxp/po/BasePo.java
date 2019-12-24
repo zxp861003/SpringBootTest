@@ -4,9 +4,6 @@ import java.io.Serializable;
 
 public class BasePo implements Serializable{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -6199129447030012079L;
 	
 	private long id;

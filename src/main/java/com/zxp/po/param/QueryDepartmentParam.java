@@ -1,26 +1,28 @@
-package com.zxp.po;
+package com.zxp.po.param;
 
-public class Department extends BasePo{
+public class QueryDepartmentParam {
 
-	private static final long serialVersionUID = 8229553158584640148L;
-
-	private String name;
+	private long id;
 	private long parentId;
-
+	private String name;
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
 	public long getParentId() {
 		return parentId;
 	}
-
 	public void setParentId(long parentId) {
 		this.parentId = parentId;
 	}
+	
 	
 }

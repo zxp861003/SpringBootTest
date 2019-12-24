@@ -13,6 +13,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<result property="age" column="age" />
 		<result property="sex" column="sex" />
 		<result property="idCard" column="id_card" />
+		<result property="depId" column="dep_id" />
 		<result property="createTime" column="create_time" />
 		<association property="accountInfo" javaType="userAccount">
 			<id property="id" column="id"></id>
@@ -29,7 +30,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<insert id="insertUser" parameterType="user">
 		insert into
-		t_user(name,age) values(#{name},#{age})
+		t_user(name,age,sex,id_card,dep_id,create_time) 
+		values(#{name},#{age},#{sex},#{idCard},#{depId},#{createTime})
 	</insert>
 
 	<select id="selectUserList" parameterType="queryUserParam" resultMap="userList">

@@ -7,28 +7,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.zxp.controler.output.BaseResponse;
-import com.zxp.po.User;
-import com.zxp.service.UserService;
+import com.zxp.po.Department;
+import com.zxp.service.DepartmentService;
 
 @RestController    //@RestController = @ResponseBody + @Controller 
-@RequestMapping("/user")
-public class UserControler extends BaseControler{
+@RequestMapping("/dep")
+public class DepartmentControler extends BaseControler{
 
-	private static final Logger logger = Logger.getLogger(UserControler.class);
+	private static final Logger logger = Logger.getLogger(DepartmentControler.class);
 	
 	@Autowired
-	private UserService userService;
+	private DepartmentService depService;
 	
-	@GetMapping("/getall")
-	public BaseResponse getUserList(){
+	@GetMapping("/getlist")
+	public BaseResponse getDepList(){
 		logger.info("controls  start getUserList ");
-		List<User> list = userService.selectUsersAll();
+		List<Department> list = depService.selectDepartmentList();
 		
 		return getSuccessResponse(list);
 	}
@@ -40,25 +39,10 @@ public class UserControler extends BaseControler{
 	 * @PathVariable  从URL路径中获取数据
 	 * @RequestHeader  从请求Header 中获取数据
 	 **/
-	@PostMapping("/adduser")
-	public BaseResponse addUser(@RequestBody @Validated User user){
-		int result = userService.addUser(user);
+	@PostMapping("/adddep")
+	public BaseResponse addDepartment(@RequestBody @Validated Department dep){
+		int result = depService.addDepartment(dep);
 		return getSuccessResponse(result);
 	}
 	
-	@PutMapping("/updateuser" )
-	public User updateUser(){
-		
-		return userService.updateUser();
-	}
-	
-	/**
-     * 处理 "/users/{id}" 的 GET 请求，用来删除 User 信息
-     */
-//    @DeleteMapping("/delete/{id}")
-//    public String deleteUser(@PathVariable Long id) {
-//
-//        userService.delete(id);
-//        return "redirect:/users/";
-//    }
 }

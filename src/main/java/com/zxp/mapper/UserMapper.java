@@ -6,7 +6,7 @@ import com.zxp.po.User;
 
 public interface UserMapper {
 	
-	void insertUser(User user);
+	int insertUser(User user);
 	
 	List<User> selectUserList();
 	

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zxp.mapper.DepartmentMapper">
+
+	<sql id="Base_Column_List">
+		id,name,parent_id,create_time
+	</sql>
+	<resultMap id="departmentList" type="department">
+		<id property="id" column="id"></id>
+		<result property="name" column="name"></result>
+		<result property="parentId" column="parent_id"></result>
+		<result property="createTime" column="create_time" />
+	</resultMap>
+
+	<insert id="insertDepartment" parameterType="department">
+		insert into
+		t_department(name,parent_id,create_time) values(#{name},#{parentId},#{createTime})
+	</insert>
+
+	<select id="selectDepartmentList" parameterType="queryDepartmentParam" resultMap="departmentList">
+		select
+		<include refid="Base_Column_List" />
+		from t_department
+		WHERE 1=1
+		<if test="id !=null and id !=''">
+			and id = #{id}
+		</if>
+		<if test="name !=null and name !=''">
+			and name = #{name}
+		</if>
+		<if test="parentId !=null and parentId !=''">
+			and parent_id = #{parentId}
+		</if>
+	</select>
+
+
+</mapper>

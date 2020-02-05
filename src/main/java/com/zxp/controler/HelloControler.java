@@ -17,4 +17,9 @@ public class HelloControler {
 		map.put("msg", "HelloWorld");
 		return map;
 	}
+	
+	@RequestMapping("/map1")
+    public String index() {
+        return "redirect:index.html";
+    }
 }

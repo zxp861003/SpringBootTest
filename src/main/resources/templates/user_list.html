@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ <!-- 
+	<input type="button" id = "btnsubmit" value="创建用户" onclick="window.location.href='/zxp/user_add.html';">
+   -->  
+       <a th:href="@{/zxp/user/index}">新增用户</a>                            					
+ 
+
+<!-- Will produce 'http://localhost:8080/gtvg/order/details?orderId=3' (plus rewriting) --> 
+<!--  
+<a href="details.html" th:href="@{http://localhost:8080/gtvg/order/details(orderId=${o.id})}">view</a> 
+
+<a href="details.html" th:href="@{/order/details(orderId=${o.id})}">view</a>
+
+<a href="details.html" th:href="@{order/{orderId}/details(orderId=${o.id})}">Content路径,默认访问static下的order文件夹</a>
+
+-->
+
+	<table border="1">
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Age</th>
+			<th>idCard</th>
+		</tr>
+		<tr th:each="u,var : ${list}">
+			<td th:text="${u.id}"></td>
+			<td th:text="${u.name}"></td>
+			<td th:text="${u.age}"></td>
+			<td th:text="${u.idCard}"></td>
+		</tr>
+	</table>
+</body>
+</html>

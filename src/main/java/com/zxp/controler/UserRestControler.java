@@ -18,7 +18,7 @@ import com.zxp.service.UserService;
 
 @RestController    //@RestController = @ResponseBody + @Controller 
 @RequestMapping("/user")
-public class UserRestControler extends BaseControler{
+public class UserRestControler extends BaseRestControler{
 
 	private static final Logger logger = Logger.getLogger(UserRestControler.class);
 	

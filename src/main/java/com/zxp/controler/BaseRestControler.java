@@ -2,7 +2,7 @@ package com.zxp.controler;
 
 import com.zxp.controler.output.BaseResponse;
 
-public class BaseControler {
+public class BaseRestControler {
 
 	
 	public BaseResponse getSuccessResponse(Object result){

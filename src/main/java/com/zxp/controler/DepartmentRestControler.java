@@ -17,9 +17,9 @@ import com.zxp.service.DepartmentService;
 
 @RestController    //@RestController = @ResponseBody + @Controller 
 @RequestMapping("/dep")
-public class DepartmentControler extends BaseControler{
+public class DepartmentRestControler extends BaseRestControler{
 
-	private static final Logger logger = Logger.getLogger(DepartmentControler.class);
+	private static final Logger logger = Logger.getLogger(DepartmentRestControler.class);
 	
 	@Autowired
 	private DepartmentService depService;

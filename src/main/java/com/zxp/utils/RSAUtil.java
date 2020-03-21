@@ -41,8 +41,7 @@ public class RSAUtil {
 	/**
 	 * 获取私钥
 	 * 
-	 * @param privateKey
-	 *            私钥字符串
+	 * @param privateKey  私钥字符串
 	 * @return
 	 */
 	public static PrivateKey getPrivateKey(String privateKey) throws Exception {
@@ -55,8 +54,7 @@ public class RSAUtil {
 	/**
 	 * 获取公钥
 	 * 
-	 * @param publicKey
-	 *            公钥字符串
+	 * @param publicKey 公钥字符串
 	 * @return
 	 */
 	public static PublicKey getPublicKey(String publicKey) throws Exception {
@@ -69,10 +67,8 @@ public class RSAUtil {
 	/**
 	 * RSA加密
 	 * 
-	 * @param data
-	 *            待加密数据
-	 * @param publicKey
-	 *            公钥
+	 * @param data   待加密数据
+	 * @param publicKey  公钥
 	 * @return
 	 */
 	public static String encrypt(String data, PublicKey publicKey) throws Exception {
@@ -104,10 +100,8 @@ public class RSAUtil {
 	/**
 	 * RSA解密
 	 * 
-	 * @param data
-	 *            待解密数据
-	 * @param privateKey
-	 *            私钥
+	 * @param data  待解密数据
+	 * @param privateKey  私钥
 	 * @return
 	 */
 	public static String decrypt(String data, PrivateKey privateKey) throws Exception {
@@ -138,11 +132,8 @@ public class RSAUtil {
 
 	/**
 	 * 签名
-	 * 
-	 * @param data
-	 *            待签名数据
-	 * @param privateKey
-	 *            私钥
+	 * @param data  待签名数据
+	 * @param privateKey  私钥
 	 * @return 签名
 	 */
 	public static String sign(String data, PrivateKey privateKey) throws Exception {
@@ -159,12 +150,9 @@ public class RSAUtil {
 	/**
 	 * 验签
 	 * 
-	 * @param srcData
-	 *            原始字符串
-	 * @param publicKey
-	 *            公钥
-	 * @param sign
-	 *            签名
+	 * @param srcData  原始字符串
+	 * @param publicKey  公钥
+	 * @param sign  签名
 	 * @return 是否验签通过
 	 */
 	public static boolean verify(String srcData, PublicKey publicKey, String sign) throws Exception {

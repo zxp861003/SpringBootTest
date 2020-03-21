@@ -8,7 +8,6 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.zxp.po.User;
@@ -16,7 +15,7 @@ import com.zxp.service.UserService;
 
 @Controller
 @RequestMapping("/user")
-public class UserController {
+public class UserController extends BaseConroller{
 	
 	@Autowired
 	private UserService userService;
@@ -51,8 +50,5 @@ public class UserController {
 		return "user_list";
 	}
 	
-	@RequestMapping("/{page}")
-	public String showInfo(@PathVariable String page){
-		return page;
-	}
+	
 }
